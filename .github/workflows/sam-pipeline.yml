@@ -20,4 +20,4 @@ jobs:
 # Run Unit tests - Specify unit tests here
 
 # sam deploy
-      - run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --stack-name IncBotti_Stack --s3-bucket build.package.for.deployment.bucket --capabilities CAPABILITY_IAM --region eu-north-1 --parameter-overrides TelegramToken=${{ secrets.TELEGRAM_TOKEN }}
+      - run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --stack-name IncBotti-Stack --s3-bucket build.package.for.deployment.bucket --capabilities CAPABILITY_IAM --region eu-north-1 --parameter-overrides TelegramToken=${{ secrets.TELEGRAM_TOKEN }}
